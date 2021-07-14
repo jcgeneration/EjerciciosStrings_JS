@@ -20,7 +20,7 @@
 
 > 4.6 Escribe en la consola del navegador el Apellido Materno en Minúsculas
 
-> 4.7 Escribe en la consola del navegador el Apellido Materno en Minúsculas
+> 4.7 Escribe en la consola del navegador el Nombre Completo en Minúscula la inicial de cada parte y Mayúsculas el resto, por ejemplo con el nombre Jorge Pérez Ramos se debería escribir: jORGE pÉREZ rAMOS
 
 ___
 ### Bonus Track  
