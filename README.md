@@ -22,8 +22,8 @@
 
 > 4.7 Escribe en la consola del navegador el Apellido Materno en Minúsculas
 
-### Bonus Track  ---
-
+___
+### Bonus Track  
 > 4.8 Escribe en la consola del navegador el Nombre Completo al revés, por ejemplo con el nombre: Jorge Pérez Ramos se debería escribir: somaR zeréP egroJ
 
 Referencias: [MDN Strings](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
