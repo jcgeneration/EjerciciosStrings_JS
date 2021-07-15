@@ -17,14 +17,7 @@ console.log(userName + lastPat + lastMat);
 // 4.4 Escribe en la consola del navegador true si el nombre inicia con una letra entre la A y la M, y escribe false de lo contrario
 function isBetweenAtoM(str) 
 {
-    let condition = false;
-    let words = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"];
-    for (let i = 0; i < words.length; i++)
-    {
-        if (str[0].toUpperCase() === words[i].toUpperCase())
-            condition = true;
-    }
-    return condition;
+    return (str.charCodeAt(0) >= 65 && str.charCodeAt(0) <= 77);
 }
 console.log(isBetweenAtoM( userName ));
 
