@@ -38,3 +38,9 @@ console.log(lastMat.toLowerCase());
 console.log(userName[0].toLowerCase() + userName.slice(1).toUpperCase() + " "
 + lastPat[0].toLowerCase() + lastPat.slice(1).toUpperCase() + " "
 + lastMat[0].toLowerCase() + lastMat.slice(1).toUpperCase());
+
+// 4.8 Escribe en la consola del navegador el Nombre Completo al revés, por ejemplo con el nombre: Jorge Pérez Ramos se debería escribir: somaR zeréP egroJ
+let fullNameInv = "";
+for (let i = fullName.length-1; i >= 0; i--)
+    fullNameInv += fullName[i];
+console.log(fullNameInv)
