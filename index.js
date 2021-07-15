@@ -38,3 +38,19 @@ let newString = [];
     })
 
 console.log(newString.join(' '));
+
+//Bonus Track
+// 4.8 Escribe en la consola del navegador el Nombre Completo al revés, por ejemplo con el nombre: Jorge Pérez Ramos se debería escribir: somaR zeréP egroJ
+
+let reverseStr = [];
+
+    tmp.forEach(el => {
+        let strInvert = "";
+        let x = el.length;
+            while ( x >= 0 ) {
+            strInvert = strInvert + el.charAt(x);
+            x--;
+            }
+        reverseStr.push(strInvert);
+    })
+console.log(reverseStr.reverse().join(' '));
