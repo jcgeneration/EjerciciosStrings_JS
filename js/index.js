@@ -1,6 +1,7 @@
 /*> 4.1 Solicita al usuario su Nombre Completo mediante un window.prompt*/
 let nombreCompleto;
 nombreCompleto=String(window.prompt("Ingresa tu nombre completo: "));
+
 /*> 4.2 Escribe en la consola del navegador su nombre y apellidos por separado*/
 let nombreCompletoSplit= nombreCompleto.split(" ");
 let apellidoM=nombreCompletoSplit.pop();
@@ -14,6 +15,7 @@ for(i=0;i<tamano;i++){
 console.log("Su nombre es: "+nombre);
 console.log("Su apellido Paterno es: "+apellidoP);
 console.log("Su apellido Materno es: "+apellidoM);
+
 /*> 4.3 Escribe en la consola del navegador su Nombre Completo eliminando 
 los espacios en blanco al principio y al final*/
 espacioInicio= /^ /;
@@ -37,7 +39,7 @@ for(i=0;i<tamano;i++){
 }
 
 function verificarInicial(nombreI){
-    if(nombre[0]=='A' || nombre[0]=='B' || nombre[0]=='C' || nombre[0]=='D' || nombre[0]=='E' || nombre[0]=='F' || nombre[0]=='G' || nombre[0]=='H' || nombre[0]=='I' || nombre[0]=='J' || nombre[0]=='K' || nombre[0]=='L'|| nombre[0]=='M'){
+    if(nombreI[0]=='A' || nombreI[0]=='B' || nombreI[0]=='C' || nombreI[0]=='D' || nombreI[0]=='E' || nombreI[0]=='F' || nombreI[0]=='G' || nombreI[0]=='H' || nombreI[0]=='I' || nombreI[0]=='J' || nombreI[0]=='K' || nombreI[0]=='L'|| nombreI[0]=='M'){
         console.log(true);
     } else{
         console.log(false);
@@ -45,5 +47,10 @@ function verificarInicial(nombreI){
 }
 
 verificarInicial(nombre);
+
+/*> 4.5 Escribe en la consola del navegador el Apellido Paterno en Mayúsculas*/
+console.log(apellidoP.toUpperCase());
+
+
 
 
