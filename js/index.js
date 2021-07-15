@@ -51,6 +51,9 @@ verificarInicial(nombre);
 /*> 4.5 Escribe en la consola del navegador el Apellido Paterno en Mayúsculas*/
 console.log(apellidoP.toUpperCase());
 
+/*> 4.6 Escribe en la consola del navegador el Apellido Materno en Minúsculas*/
+console.log(apellidoM.toLocaleLowerCase());
+
 
 
 
