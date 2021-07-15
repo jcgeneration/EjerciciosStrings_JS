@@ -73,7 +73,6 @@ nombreCompletoSplit= nombreCompleto.split(" ");
 apellidoM=nombreCompletoSplit.pop();
 apellidoP=nombreCompletoSplit.pop();
 tamano=nombreCompletoSplit.length;
-console.log(tamano);
 let nombreM;
 nombreC="";
 
@@ -87,6 +86,29 @@ for(i=0;i<tamano;i++){
 nombreC= nombreC.replace (espacioFinal,"");
 
 console.log(nombreC+" "+apellidoPM+" "+apellidoMM);
+
+/*
+### Bonus Track  
+> 4.8 Escribe en la consola del navegador el Nombre Completo al revés, 
+por ejemplo con el nombre: Jorge Pérez Ramos se debería escribir: somaR zeréP egroJ
+*/
+let nombreCompletoCopia=nombreCompleto;
+
+function nombreReves(cadena){
+    let longitud =cadena.length;
+    let temporal="";
+    for(let j=0; j<longitud; j++){
+        temporal=temporal+cadena[longitud-1-j];
+    }
+    console.log(temporal);
+}//NombreReves
+
+nombreReves(nombreCompletoCopia);
+
+/*Ejemplo*/
+nombreReves("Jorge Pérez Ramos");
+
+
 
 
 
