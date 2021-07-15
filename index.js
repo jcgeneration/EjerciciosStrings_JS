@@ -86,10 +86,5 @@ function backwardsName(str){
     }
     str = str.join(" ");
     return str;
-
-    // var toArray = str.split(" ");
-    // var reversal = toArray.reverse();
-    // var backed = reversal.join(" ");
-    // return backed;
 }
 console.log(backwardsName(nombre));
