@@ -8,10 +8,14 @@ let apellidoM=nombreCompletoSplit.pop();
 let apellidoP=nombreCompletoSplit.pop();
 let tamano=nombreCompletoSplit.length;
 let nombre="";
-for(i=0;i<tamano;i++){
+for( var i=0;i<tamano;i++){
     nombre=nombre+nombreCompletoSplit.shift();
     nombre=nombre+" ";
 }
+espacioFinal = / $/;
+nombre= nombre.replace (espacioFinal,"");
+
+
 console.log("Su nombre es: "+nombre);
 console.log("Su apellido Paterno es: "+apellidoP);
 console.log("Su apellido Materno es: "+apellidoM);
@@ -37,6 +41,7 @@ for(i=0;i<tamano;i++){
     nombre=nombre+nombreCompletoSplit.shift();
     nombre=nombre+" ";
 }
+nombre= nombre.replace (espacioFinal,"");
 
 function verificarInicial(nombreI){
     if(nombreI[0]=='A' || nombreI[0]=='B' || nombreI[0]=='C' || nombreI[0]=='D' || nombreI[0]=='E' || nombreI[0]=='F' || nombreI[0]=='G' || nombreI[0]=='H' || nombreI[0]=='I' || nombreI[0]=='J' || nombreI[0]=='K' || nombreI[0]=='L'|| nombreI[0]=='M'){
@@ -52,7 +57,41 @@ verificarInicial(nombre);
 console.log(apellidoP.toUpperCase());
 
 /*> 4.6 Escribe en la consola del navegador el Apellido Materno en Minúsculas*/
-console.log(apellidoM.toLocaleLowerCase());
+console.log(apellidoM.toLowerCase());
+
+/*> 4.7 Escribe en la consola del navegador el Nombre Completo en Minúscula 
+la inicial de cada parte y Mayúsculas el resto, por ejemplo con el nombre 
+Jorge Pérez Ramos se debería escribir: jORGE pÉREZ rAMOS*/
+
+let apellidoPM=apellidoP.toUpperCase();
+apellidoPM=apellidoPM.replace(apellidoPM[0],apellidoPM[0].toLowerCase());
+
+let apellidoMM=apellidoM.toUpperCase();
+apellidoMM=apellidoMM.replace(apellidoMM[0],apellidoMM[0].toLowerCase());
+
+nombreCompletoSplit= nombreCompleto.split(" ");
+apellidoM=nombreCompletoSplit.pop();
+apellidoP=nombreCompletoSplit.pop();
+tamano=nombreCompletoSplit.length;
+console.log(tamano);
+let nombreM;
+nombreC="";
+
+for(i=0;i<tamano;i++){
+    nombreM=nombreCompletoSplit.shift();
+    nombreM=nombreM.toUpperCase();
+    nombreM=nombreM.replace(nombreM[0],nombreM[0].toLowerCase());
+    nombreC=nombreC+nombreM;
+    nombreC=nombreC+" ";
+}
+nombreC= nombreC.replace (espacioFinal,"");
+
+console.log(nombreC+" "+apellidoPM+" "+apellidoMM);
+
+
+
+
+
 
 
 
