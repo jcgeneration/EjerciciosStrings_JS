@@ -20,7 +20,7 @@
 
 > 4.6 Escribe en la consola del navegador el Apellido Materno en Minúsculas
 
-> 4.7 Escribe en la consola del navegador el Apellido Materno en Minúsculas
+> 4.7 Escribe en la consola del navegador el nombre completo en minusculas la inicial de cada parte y el resto en Mayusculas.
 
 ___
 ### Bonus Track  
