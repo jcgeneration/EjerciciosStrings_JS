@@ -22,13 +22,21 @@ console.log("Su apellido Materno es: "+apellidoM);
 
 /*> 4.3 Escribe en la consola del navegador su Nombre Completo eliminando 
 los espacios en blanco al principio y al final*/
+nombreCompleto2= nombreCompleto;
 espacioInicio= /^ /;
 espacioFinal = / $/;
 espaciosSeguidos = /[ ]+/g;
 nombreCompleto = nombreCompleto.replace (espaciosSeguidos," ");
 nombreCompleto = nombreCompleto.replace (espacioInicio,"");
 nombreCompleto = nombreCompleto.replace (espacioFinal,"");
+console.log("----Ocupando la función replace----");
 console.log(nombreCompleto);
+
+/*Ocupo la función de String "String.prototype.trim()*/
+nombreCompleto2 = nombreCompleto2.trim();
+console.log("----Ocupando la función trim----");
+console.log(nombreCompleto);
+
 /*> 4.4 Escribe en la consola del navegador _true_ si el nombre 
 inicia con una letra entre la A y la M, y escribe _false_ de lo contrario*/
 nombreCompletoSplit= nombreCompleto.split(" ");
@@ -51,6 +59,22 @@ function verificarInicial(nombreI){
     }
 }
 
+console.log("----Ocupando en el if varios or anidados es (deficiente por las compraciones lógicas----");
+verificarInicial(nombre);
+
+
+/*Realice otra funcion para verificar la inicial, es simplificada*/
+function verificarInicialCorta(nombreI){
+    let flag=false;
+    for( var k=65;k<=77;k++){
+        if(nombreI[0].charCodeAt()==k){
+            flag=true;
+        }
+    }
+    console.log(flag);
+}
+
+console.log("----Ocupando el codigo de las letras----");
 verificarInicial(nombre);
 
 /*> 4.5 Escribe en la consola del navegador el Apellido Paterno en Mayúsculas*/
