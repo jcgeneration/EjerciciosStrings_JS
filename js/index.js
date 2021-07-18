@@ -75,7 +75,7 @@ function verificarInicialCorta(nombreI){
 }
 
 console.log("----Ocupando el codigo de las letras----");
-verificarInicial(nombre);
+verificarInicialCorta(nombre);
 
 /*> 4.5 Escribe en la consola del navegador el Apellido Paterno en Mayúsculas*/
 console.log(apellidoP.toUpperCase());
