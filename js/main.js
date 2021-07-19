@@ -20,7 +20,7 @@ if(nombreYApellidos.length == 4){
     console.log("Mis nombre son " + nombre + ". Y mis apellido son " + apellido1 + " y " + apellido2);
 }
 
-//Nombres de mi gato para hacer pruebas 
+//Nombre de mi gato para hacer pruebas 
 //Camus Ofelio Almaraz Sanchez
 //Camus Almaraz Sanchez
 
@@ -28,7 +28,7 @@ if(nombreYApellidos.length == 4){
 console.log("'" + nombreCompleto.trim() + "'");
 
 //4.4 Escribe en la consola del navegador _true_ si el nombre inicia con una letra entre la A y la M, y escribe _false_ de lo contrario
-if (nombreCompleto.charAt(0) == "a" || nombreCompleto.charAt(0) == "m") {
+if (nombreCompleto.toLowerCase().charCodeAt(0) >= 97 && nombreCompleto.toLowerCase().charCodeAt(0) <= 109) {
     console.log(true);
 } else {
     console.log(false);
